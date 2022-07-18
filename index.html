@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Article preview component</title>
+<body>
+  <div id="root" class="relative">
+    <main id="card" class="container absolute transform-center flex flex-col">
+      <img id="card__article__image" src="./images/drawers.jpg" alt="drawers" />
+      <section id="card__article__content" class="flex flex-col">
+        <h1 class="font-bold text-verydarkgrayishblue spacing-tight">Shift the overall look and feel by adding 
+          these wonderful touches to furniture in your home
+        </h1>
+        <p class="line-narrow">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+          I've got some simple tips to help you make any room feel complete.
+        </p>
+        <div id="card__article__detail" class="relative container flex flex-center">
+          <img id="card__article__detail__author" src="./images/avatar-michelle.jpg" class="rounded-full" />
+          <div id="card__article__detail__namedate" class="container flex flex-col justify-center">
+            <p class="font-bold text-verydarkgrayishblue">Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+          <div id="card__article__detail__share">
+            <button id="card__article__detail__share__button" class="rounded-full">
+              <img src="./images/icon-share.svg" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
