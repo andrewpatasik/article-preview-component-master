@@ -17,14 +17,14 @@
         <p class="line-narrow">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
           I've got some simple tips to help you make any room feel complete.
         </p>
-        <div id="card__article__detail" class="relative container flex flex-center">
-          <img id="card__article__detail__author" src="./images/avatar-michelle.jpg" class="rounded-full" />
-          <div id="card__article__detail__namedate" class="container flex flex-col justify-center">
+        <div id="card__article__detail" class="container flex flex-center">
+          <img id="card__article__detail__author" src="./images/avatar-michelle.jpg" class="rounded-full z-index-behind" />
+          <div id="card__article__detail__namedate" class="container flex flex-col justify-center z-index-behind">
             <p class="font-bold text-verydarkgrayishblue">Michelle Appleton</p>
             <p>28 Jun 2020</p>
           </div>
           <div id="card__article__detail__share">
-            <button id="card__article__detail__share__button" class="rounded-full">
+            <button id="card__article__detail__share__button" class="rounded-full animate-smooth">
               <img src="./images/icon-share.svg" />
             </button>
           </div>
@@ -32,5 +32,7 @@
       </section>
     </main>
   </div>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="helper.js"></script>
 </body>
 </html>
