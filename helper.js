@@ -33,7 +33,7 @@ export const generateShareComponent = () => {
     {
       id: "card__article__detail__share__content",
     },
-    ["absolute", "bg-verydarkgrayishblue", "flex", "items-center", "hidden", "animate-smooth"]
+    ["absolute", "bg-verydarkgrayishblue", "flex", "hidden", "items-center", "shadow-lg", "animate-smooth"]
   );
 
   const shareArticleParagraphElement = element.generateElement(

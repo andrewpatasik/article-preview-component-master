@@ -83,12 +83,12 @@ button {
 
 #card__article__content {
   height: 100%;
-  padding: 1.3rem 1.95rem .5rem 1.95rem;
+  padding: 1.3rem 1.95rem 0.5rem 1.95rem;
 }
 
 #card__article__content > h1 {
   font-size: calc(1em + 2.5px);
-  margin: .75rem 0;
+  margin: 0.75rem 0;
 }
 
 #card__article__content > p {
@@ -106,7 +106,7 @@ button {
 }
 
 #card__article__detail__namedate {
-  font-size: calc(1em - .5px);
+  font-size: calc(1em - 0.5px);
   flex-basis: 50%;
   row-gap: 0.2rem;
 }
@@ -213,6 +213,10 @@ button {
   line-height: 1.6rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-verydarkgrayishblue {
   color: var(--verydarkgrayishblue);
 }
@@ -246,27 +250,69 @@ button {
   transition: transform 0.5s;
 }
 
+.shadow-lg {
+  box-shadow: 0 6px 20px 5px rgba(187, 186, 186, 0.2),
+    0 6px 25px 5px rgba(175, 175, 175, 0.19);
+}
+
 /* responsive screen */
 
 @media (min-width: 1440px) {
   #card {
-    width: calc(1440px - 40rem);
-    height: 20rem;
+    width: calc(1440px - 41rem);
+    height: 18rem;
     flex-direction: row;
+    overflow: visible;
   }
 
   #card__article__image {
     width: 40%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
   }
 
   #card__article__content {
     height: 100%;
-    padding: 1.5rem 3rem 0 3rem;
+    padding: 1.5rem 3rem 1.75rem 3rem;
   }
 
   #card__article__content > h1 {
-    font-size: calc(1em + 8px);
+    font-size: calc(1em + 7px);
+  }
+
+  #card__article__detail__share__content {
+    width: auto;
+    height: auto;
+    bottom: 6rem;
+    right: -5rem;
+    padding: 1rem 3rem;
+    border-radius: 0.75rem;
+    transition: opacity 0.1s ease-out;
+  }
+
+  #card__article__detail__share__content::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--verydarkgrayishblue);
+    bottom: -10px;
+    left: 41%;
+  }
+
+  /* utilities */
+
+  .line-loose {
+    line-height: 1.8rem;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: none;
+    transition: opacity 0.1s ease-in;
   }
 }
