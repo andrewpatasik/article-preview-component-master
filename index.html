@@ -8,24 +8,24 @@
   <title>Frontend Mentor | Article preview component</title>
 <body>
   <div id="root" class="relative">
-    <main id="card" class="container absolute transform-center flex flex-col">
+    <main id="card" class="container absolute transform-center flex">
       <img id="card__article__image" src="./images/drawers.jpg" alt="drawers" />
       <section id="card__article__content" class="flex flex-col">
-        <h1 class="font-bold text-verydarkgrayishblue spacing-tight">Shift the overall look and feel by adding 
+        <h1 class="text-verydarkgrayishblue spacing-tight line-loose">Shift the overall look and feel by adding 
           these wonderful touches to furniture in your home
         </h1>
-        <p class="line-narrow">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+        <p class="font-bold line-narrow">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
           I've got some simple tips to help you make any room feel complete.
         </p>
         <div id="card__article__detail" class="container flex flex-center">
-          <img id="card__article__detail__author" src="./images/avatar-michelle.jpg" class="rounded-full z-index-behind" />
-          <div id="card__article__detail__namedate" class="container flex flex-col justify-center z-index-behind">
+          <img id="card__article__detail__author" src="./images/avatar-michelle.jpg" class="rounded-full" />
+          <div id="card__article__detail__namedate" class="container flex flex-col justify-center">
             <p class="font-bold text-verydarkgrayishblue">Michelle Appleton</p>
             <p>28 Jun 2020</p>
           </div>
           <div id="card__article__detail__share">
-            <button id="card__article__detail__share__button" class="rounded-full animate-smooth">
-              <img src="./images/icon-share.svg" />
+            <button id="card__article__detail__share__button" class="relative bg-lightgrayishblue rounded-full animate-smooth">
+              <img id="card__share__button__icon" src="./images/icon-share.svg" class="animate-smooth"/>
             </button>
           </div>
         </div>

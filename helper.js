@@ -55,13 +55,15 @@ export const generateShareComponent = () => {
 
   for (let index = 0; index < icons.length; index++) {
     const shareArticleListElement = element.generateElement("li");
+    const shareArticleAnchorElement = element.generateElement("a");
     const shareArticleListImageElement = element.generateElement("img", {
       src: `./images/icon-${icons[index]}.svg`
     }, [
       "share-icon",
     ]);
 
-    shareArticleListElement.appendChild(shareArticleListImageElement);
+    shareArticleAnchorElement.appendChild(shareArticleListImageElement);
+    shareArticleListElement.appendChild(shareArticleAnchorElement);
     shareArticleListContainerElement.append(shareArticleListElement);
   }
 

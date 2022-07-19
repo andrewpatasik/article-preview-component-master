@@ -7,6 +7,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const cardArticleShareButtonElement = document.getElementById(
     "card__article__detail__share__button"
   );
+  const cardArticleShareButtonIconElement = document.getElementById(
+    "card__share__button__icon"
+  );
 
   const shareComponent = generateShareComponent();
 
@@ -18,5 +21,8 @@ window.addEventListener("DOMContentLoaded", () => {
     evt.preventDefault();
 
     shareComponent.classList.toggle("hidden");
-  })
+    cardArticleShareButtonElement.classList.toggle("bg-lightgrayishblue");
+    cardArticleShareButtonElement.classList.toggle("bg-desaturateddarkblue");
+    cardArticleShareButtonIconElement.classList.toggle("filter-white");
+  });
 });
